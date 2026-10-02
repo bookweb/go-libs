@@ -10,3 +10,7 @@ func CreateSlogJSONLogger(writer io.Writer, opts ...Option) *slog.Logger {
 	handlerOptions := &slog.HandlerOptions{}
 	return slog.New(slog.NewJSONHandler(writer, handlerOptions))
 }
+
+func NewSimpleJSONLogger(opts ...Option) *slog.Logger {
+	return CreateSlogJSONLogger(GetDefaultSlogWriter(), opts...)
+}
