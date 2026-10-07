@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"runtime/debug"
 
+	"github.com/bookweb/go-libs/logs"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/rs/cors"
-	"gitlab.com/pmtrade/pm-go-libs/logs"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 )
